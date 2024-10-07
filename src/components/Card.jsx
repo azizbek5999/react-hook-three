@@ -1,14 +1,11 @@
-import { forwardRef, useContext } from "react";
-import { ThemeContent } from './../index';
+import React from 'react'
 
-const Card = forwardRef(function Card(props, ref) {
-  const data = useContext(ThemeContent)
+const Card = (props) => {
   return (
-    <dispatchEvent>
-      <h2>Card Component</h2>
-      <h2>{"Welcome"}</h2>
-    </dispatchEvent>
-  );
-});
+    <div>
+      <p>{props.unique}</p>
+    </div>
+  )
+}
 
-export default Card;
+export default Card
